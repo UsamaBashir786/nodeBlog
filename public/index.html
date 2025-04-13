@@ -1,0 +1,100 @@
+<!-- Save this in public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Blog</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-gray-50 font-sans">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex">
+            <a
+              href="/"
+              class="flex items-center text-xl font-bold text-blue-600"
+              >MyBlog</a
+            >
+            <div class="hidden md:ml-6 md:flex md:space-x-8">
+              <a
+                href="/"
+                class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 hover:text-blue-600"
+                >Home</a
+              >
+              <a
+                href="/posts"
+                class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 hover:text-blue-600"
+                >Posts</a
+              >
+              <a
+                href="/about"
+                class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 hover:text-blue-600"
+                >About</a
+              >
+            </div>
+          </div>
+          <div class="flex items-center">
+            <a
+              href="/login"
+              class="text-sm text-gray-700 hover:text-blue-600 mr-4"
+              >Login</a
+            >
+            <a
+              href="/signup"
+              class="text-sm bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700"
+              >Sign Up</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main content -->
+    <main class="p-6">
+      <!-- About Section -->
+      <section class="mt-10">
+        <h2 class="text-2xl font-semibold text-gray-800">About This Blog</h2>
+        <p class="mt-2 text-gray-600">
+          This blog platform is built with Node.js and Tailwind CSS, allowing
+          you to create, read, and share thoughts and stories easily. It's
+          lightweight, fast, and designed for simplicity.
+        </p>
+      </section>
+
+      <!-- Features Section -->
+      <section class="mt-10">
+        <h2 class="text-2xl font-semibold text-gray-800">Key Features</h2>
+        <ul class="mt-4 space-y-2 text-gray-600 list-disc list-inside">
+          <li>User-friendly interface</li>
+          <li>Create and manage blog posts</li>
+          <li>Fully responsive design</li>
+          <li>Simple login and registration system</li>
+          <li>Fast and minimal using Express.js</li>
+        </ul>
+      </section>
+
+      <!-- How It Works -->
+      <section class="mt-10">
+        <h2 class="text-2xl font-semibold text-gray-800">How It Works</h2>
+        <ol class="mt-4 space-y-2 text-gray-600 list-decimal list-inside">
+          <li>Create an account or login.</li>
+          <li>Start writing your blog post.</li>
+          <li>Publish and share it with the world.</li>
+          <li>Read other people's blogs and leave comments.</li>
+        </ol>
+      </section>
+
+      <!-- Developer Info -->
+      <section class="mt-10">
+        <h2 class="text-2xl font-semibold text-gray-800">Developed By</h2>
+        <p class="mt-2 text-gray-600">
+          This blog system was developed by <strong>Usama Bashir</strong>, a
+          passionate full stack web developer from Sahiwal, Pakistan.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

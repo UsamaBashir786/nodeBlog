@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="items-center justify-center min-h-screen bg-gray-100">
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16">
+          <div class="flex">
+            <a
+              href="/"
+              class="flex items-center text-xl font-bold text-blue-600"
+              >MyBlog</a
+            >
+            <div class="hidden md:ml-6 md:flex md:space-x-8">
+              <a
+                href="/"
+                class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 hover:text-blue-600"
+                >Home</a
+              >
+              <a
+                href="/posts"
+                class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 hover:text-blue-600"
+                >Posts</a
+              >
+              <a
+                href="/about"
+                class="inline-flex items-center px-1 pt-1 text-sm font-medium text-gray-900 hover:text-blue-600"
+                >About</a
+              >
+            </div>
+          </div>
+          <div class="flex items-center">
+            <a
+              href="/login"
+              class="text-sm text-gray-700 hover:text-blue-600 mr-4"
+              >Login</a
+            >
+            <a
+              href="/signup"
+              class="text-sm bg-blue-600 text-white px-3 py-1 rounded hover:bg-blue-700"
+              >Sign Up</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div class="w-full max-w-md bg-white rounded shadow p-6">
+      <h2 class="text-2xl font-bold text-center text-blue-600 mb-6">
+        Create an Account
+      </h2>
+      <form action="/register" method="POST" class="space-y-4">
+        <div>
+          <label class="block text-sm font-medium text-gray-700"
+            >Full Name</label
+          >
+          <input
+            type="text"
+            name="name"
+            required
+            class="mt-1 w-full px-3 py-2 border rounded"
+          />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700">Email</label>
+          <input
+            type="email"
+            name="email"
+            required
+            class="mt-1 w-full px-3 py-2 border rounded"
+          />
+        </div>
+        <div>
+          <label class="block text-sm font-medium text-gray-700"
+            >Password</label
+          >
+          <input
+            type="password"
+            name="password"
+            required
+            class="mt-1 w-full px-3 py-2 border rounded"
+          />
+        </div>
+        <button
+          type="submit"
+          class="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700"
+        >
+          Register
+        </button>
+      </form>
+      <p class="mt-4 text-center text-sm text-gray-600">
+        Already have an account?
+        <a href="/login.html" class="text-blue-600">Login</a>
+      </p>
+    </div>
+  </body>
+</html>
